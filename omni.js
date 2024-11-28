@@ -28,16 +28,19 @@ const qsa = (selector) => document.querySelectorAll(selector);
 const ce = (tagName) => document.createElement(tagName);
 
 // Shortcut for setAttribute
-const sa = (element, attribute, value) => element.setAttribute(attribute, value);
+const sa = (element, attribute, value) =>
+  element.setAttribute(attribute, value);
 
 // Shortcut for getAttribute
 const ga = (element, attribute) => element.getAttribute(attribute);
 
 // Shortcut for addEventListener
-const ae = (element, event, callback) => element.addEventListener(event, callback);
+const ae = (element, event, callback) =>
+  element.addEventListener(event, callback);
 
 // Shortcut for removeEventListener
-const re = (element, event, callback) => element.removeEventListener(event, callback);
+const re = (element, event, callback) =>
+  element.removeEventListener(event, callback);
 
 // Shortcut for classList.add
 const cla = (element, className) => element.classList.add(className);
@@ -49,25 +52,29 @@ const clm = (element, className) => element.classList.remove(className);
 const clt = (element, className) => element.classList.toggle(className);
 
 // Shortcut for innerHTML (set or get)
-const ih = (element, content) => content !== undefined ? element.innerHTML = content : element.innerHTML;
+const ih = (element, content) =>
+  content !== undefined ? (element.innerHTML = content) : element.innerHTML;
 
 // Shortcut for innerText (set or get)
-const it = (element, content) => content !== undefined ? element.innerText = content : element.innerText;
+const it = (element, content) =>
+  content !== undefined ? (element.innerText = content) : element.innerText;
 
 // Shortcut for value (set or get for input elements)
-const val = (element, value) => value !== undefined ? element.value = value : element.value;
+const val = (element, value) =>
+  value !== undefined ? (element.value = value) : element.value;
 
 // Shortcut for fetch GET request
-const fch = (url) => fetch(url).then(response => response.json());
+const fch = (url) => fetch(url).then((response) => response.json());
 
 // Shortcut for fetch POST request
-const fchPost = (url, data) => fetch(url, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
-}).then(response => response.json());
+const fchPost = (url, data) =>
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  }).then((response) => response.json());
 
 // Shortcut for setTimeout
 const st = (callback, delay) => setTimeout(callback, delay);
@@ -88,7 +95,7 @@ const lsGet = (key) => localStorage.getItem(key);
 const lsRemove = (key) => localStorage.removeItem(key);
 
 // Shortcut for redirect
-const go = (url) => window.location.href = url;
+const go = (url) => (window.location.href = url);
 
 // Shortcut for scroll to top
 const scrollTop = () => window.scrollTo(0, 0);
