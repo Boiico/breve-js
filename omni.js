@@ -92,7 +92,3 @@ const go = (url) => window.location.href = url;
 
 // Shortcut for scroll to top
 const scrollTop = () => window.scrollTo(0, 0);
-
-// Add event listener shortcut
-const ae = (element, event, handler) => element.addEventListener(event, handler);
-
