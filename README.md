@@ -13,8 +13,8 @@ It provides a set of shortcut functions for frequently used DOM operations, such
 ## Installation 💻
 
 You can include Breve.js in your project by adding the following CDN link to your HTML file:
-```html
-<script src="https://cdn.jsdelivr.net/gh/Boiico/breve-js@main/breve.js"></script>
+```
+<script src="https://cdn.jsdelivr.net/gh/Boiico/breveJS@main/breve.js"></script>
 ```
 Alternatively, download the breve.js file directly and link it in your project. 📥
 
