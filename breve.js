@@ -1,4 +1,4 @@
-// Omni.js - A lightweight JavaScript library by Paul Bakhtiari (Boiico)
+// breve.js - A lightweight JavaScript library by Paul Bakhtiari (Boiico)
 
 // Shortcut for document.getElementById
 const di = (id) => document.getElementById(id);
